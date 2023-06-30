@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1706.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCSApiController", "MCSApiController\MCSApiController.csproj", "{1940CBB4-2E0E-4FD7-B341-B14D2E9473BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCSApiData", "MCSApiData\MCSApiData.csproj", "{16A70349-D480-49BF-BC86-A36E4ADED57B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCSApiInterface", "MCSApiInterface\MCSApiInterface.csproj", "{C220601D-B836-4104-AACA-89B69DDD1514}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9DE1BACC-F1B0-4B02-A682-82B55FA4C9FD}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1940CBB4-2E0E-4FD7-B341-B14D2E9473BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1940CBB4-2E0E-4FD7-B341-B14D2E9473BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1940CBB4-2E0E-4FD7-B341-B14D2E9473BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1940CBB4-2E0E-4FD7-B341-B14D2E9473BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16A70349-D480-49BF-BC86-A36E4ADED57B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16A70349-D480-49BF-BC86-A36E4ADED57B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16A70349-D480-49BF-BC86-A36E4ADED57B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16A70349-D480-49BF-BC86-A36E4ADED57B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C220601D-B836-4104-AACA-89B69DDD1514}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C220601D-B836-4104-AACA-89B69DDD1514}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C220601D-B836-4104-AACA-89B69DDD1514}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C220601D-B836-4104-AACA-89B69DDD1514}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {048B46B1-5F96-463F-9E5D-D7717FA5B082}
+	EndGlobalSection
+EndGlobal
