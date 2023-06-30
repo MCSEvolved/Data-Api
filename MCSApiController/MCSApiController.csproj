@@ -14,6 +14,7 @@
     <PackageReference Include="FirebaseAdmin" Version="2.3.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authorization" Version="7.0.8" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.8" />
+    <PackageReference Include="MongoDB.Driver" Version="2.20.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -22,12 +23,20 @@
   <ItemGroup>
     <Folder Include="Controllers\" />
     <Folder Include="wwwroot\" />
-    <Folder Include="wwwroot\Images\" />
-    <Folder Include="wwwroot\Images\services\" />
+    <Folder Include="wwwroot\general\" />
+    <Folder Include="wwwroot\general\images\services\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\" />
-    <Content Remove="wwwroot\Images\" />
-    <Content Remove="wwwroot\Images\services\" />
+    <Content Remove="wwwroot\general\" />
+    <Content Remove="wwwroot\general\Images\services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MCSApiInterface\MCSApiInterface.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\MCSApiData\MCSApiData.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
   </ItemGroup>
 </Project>
