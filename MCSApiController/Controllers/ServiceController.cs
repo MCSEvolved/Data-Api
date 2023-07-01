@@ -62,7 +62,7 @@ namespace MCSApiController.Controllers
             }
 
             var request = HttpContext.Request;
-            string hostUrl = $"{request.Scheme}://{request.Host}/general/images/services";
+            string hostUrl = "https://api.mcsynergy.nl/mcs-api/images/services";
 
             bool result = await repo.SaveImage(image.OpenReadStream(), serviceId, imageName, image.FileName, hostUrl);
             return !result ? BadRequest("Service doesn't exist") : Ok();
