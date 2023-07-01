@@ -71,7 +71,7 @@ namespace MCSApiData.Repositories
 
         public async Task<bool> SaveImage(Stream stream, string serviceId, string imageName, string fileName, string hostUrl)
         {
-            string path = Path.Combine(Directory.GetCurrentDirectory(), $"wwwroot/general/images/services/{serviceId}");
+            string path = Path.Combine(Directory.GetCurrentDirectory(), $"wwwroot/mcs-api/images/services/{serviceId}");
 
             //create folder if not exist
             if (!Directory.Exists(path))

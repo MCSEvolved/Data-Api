@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace MCSApiController.Controllers
 {
 	[ApiController]
-	[Route("general/system")]
+	[Route("mcs-api/system")]
 	public class SystemController : ControllerBase
 	{
 		private readonly ISystemRepository repo;

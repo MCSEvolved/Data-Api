@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace MCSApiController.Controllers
 {
     [ApiController]
-    [Route("general/service")]
+    [Route("mcs-api/service")]
     public class ServiceController : ControllerBase
     {
         private readonly IServiceRepository repo;

@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace MCSApiController.Controllers
 {
     [ApiController]
-    [Route("general/item")]
+    [Route("mcs-api/item")]
     public class ItemController : ControllerBase
     {
         private readonly IItemRepository repo;
