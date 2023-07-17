@@ -14,8 +14,6 @@ var builder = WebApplication.CreateBuilder(args);
 FirebaseApp.Create(new AppOptions()
 {
     Credential = GoogleCredential.FromFile(builder.Configuration["CertificatePath"])
-
-
 });
 
 // firebase auth
@@ -75,6 +73,21 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors(options => options
+    .SetIsOriginAllowedToAllowWildcardSubdomains()
+    .WithOrigins(
+        "http://localhost:5173",
+        "http://localhost:8000",
+        "http://localhost:8080",
+        "https://mcsynergy.nl",
+        "https://*.mcsynergy.nl",
+        "https://josian.nl",
+        "https://*.josian.nl"
+        )
+    .AllowAnyMethod()
+    .AllowAnyHeader()
+    .AllowCredentials());
 
 app.UseAuthentication();
 app.UseAuthorization();
